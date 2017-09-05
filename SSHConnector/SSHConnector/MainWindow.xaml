@@ -5,9 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SSHConnector"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="SSHConnector developed by Jumping Yang(yzpcreate@qq.com)" Height="1714.678" Width="853.187">
     <Grid>
-        <TreeView Name="trvStructure" TreeViewItem.Expanded="TreeViewItem_Expanded" Margin="10" >
+        <Label x:Name="lbhost" Content="Host:" HorizontalAlignment="Left" Margin="9,4,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.026,0.538" Width="48"/>
+        <Label x:Name="lbuser" Content="User:" HorizontalAlignment="Left" Margin="182,4,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.026,0.538" Width="48"/>
+        <Label x:Name="lbpassword" Content="Password:" HorizontalAlignment="Left" Margin="366,4,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="HostTextBox" HorizontalAlignment="Left" Height="23" Margin="46,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <TextBox x:Name="UserTextBox" HorizontalAlignment="Left" Height="23" Margin="230,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <TextBox x:Name="PasswordTextBox" HorizontalAlignment="Left" Height="23" Margin="433,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+
+        <TreeView Name="trvStructure" TreeViewItem.Expanded="TreeViewItem_Expanded" Margin="10,47,10,10" >
         </TreeView>
+        <Button x:Name="Connect" Content="Connect" HorizontalAlignment="Left" Margin="595,7,0,0" VerticalAlignment="Top" Width="75" Click="Connect_Click"/>
     </Grid>
 </Window>
