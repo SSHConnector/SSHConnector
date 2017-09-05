@@ -146,13 +146,77 @@ namespace SSHConnector
 
             MenuItem mitem2 = new MenuItem();
             TextBlock v2 = new TextBlock();
-            v2.Inlines.Add("View2");
+            v2.Inlines.Add("Upload");
             mitem2.Header = v2;
             mitem2.Tag = o;
             mitem2.Click += MenuItem_View;
 
+            MenuItem mitem3 = new MenuItem();
+            TextBlock v3 = new TextBlock();
+            v3.Inlines.Add("Download");
+            mitem3.Header = v3;
+            mitem3.Tag = o;
+            mitem3.Click += MenuItem_View;
+
+            MenuItem mitem4 = new MenuItem();
+            TextBlock v4 = new TextBlock();
+            v4.Inlines.Add("Run Terminal");
+            mitem4.Header = v4;
+            mitem4.Tag = o;
+            mitem4.Click += MenuItem_View;
+
+            MenuItem mitem5 = new MenuItem();
+            TextBlock v5 = new TextBlock();
+            v5.Inlines.Add("Run Command");
+            mitem5.Header = v5;
+            mitem5.Tag = o;
+            mitem5.Click += MenuItem_View;
+
+            MenuItem mitem6 = new MenuItem();
+            TextBlock v6 = new TextBlock();
+            v6.Inlines.Add("Move");
+            mitem6.Header = v6;
+            mitem6.Tag = o;
+            mitem6.Click += MenuItem_View;
+
+            MenuItem mitem7 = new MenuItem();
+            TextBlock v7 = new TextBlock();
+            v7.Inlines.Add("Delete");
+            mitem7.Header = v7;
+            mitem7.Tag = o;
+            mitem7.Click += MenuItem_View;
+
+            MenuItem mitem8 = new MenuItem();
+            TextBlock v8 = new TextBlock();
+            v8.Inlines.Add("Copy");
+            mitem8.Header = v8;
+            mitem8.Tag = o;
+            mitem8.Click += MenuItem_View;
+
+            MenuItem mitem9 = new MenuItem();
+            TextBlock v9= new TextBlock();
+            v9.Inlines.Add("Paste");
+            mitem9.Header = v9;
+            mitem9.Tag = o;
+            mitem9.Click += MenuItem_View;
+
+            MenuItem mitem10 = new MenuItem();
+            TextBlock v10 = new TextBlock();
+            v10.Inlines.Add("Property");
+            mitem10.Header = v10;
+            mitem10.Tag = o;
+            mitem10.Click += MenuItem_View;
+
             menu.Items.Add(mitem1);
             menu.Items.Add(mitem2);
+            menu.Items.Add(mitem3);
+            menu.Items.Add(mitem4);
+            menu.Items.Add(mitem5);
+            menu.Items.Add(mitem6);
+            menu.Items.Add(mitem7);
+            menu.Items.Add(mitem8);
+            menu.Items.Add(mitem9);
+            menu.Items.Add(mitem10);
             tempTextBlock.ContextMenu = menu;
 
             return tempTextBlock;
