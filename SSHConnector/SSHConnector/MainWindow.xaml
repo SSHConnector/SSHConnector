@@ -8,17 +8,6 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <TreeView Name="trvStructure" TreeViewItem.Expanded="TreeViewItem_Expanded" Margin="10" >
-            <TreeView.ItemTemplate>
-                <HierarchicalDataTemplate>
-                    <TextBlock>
-                        <TextBlock.ContextMenu>
-                            <ContextMenu>
-                                <MenuItem Header ="View" Click="MenuItem_View"></MenuItem>
-                            </ContextMenu>
-                        </TextBlock.ContextMenu>
-                    </TextBlock>
-                </HierarchicalDataTemplate>
-            </TreeView.ItemTemplate>
         </TreeView>
     </Grid>
 </Window>
